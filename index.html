@@ -1,10 +1,143 @@
 <!DOCTYPE html>
-<html>
-	<head lang="en-US">
-		<meta charset="UTF-8"/>
-		<title>ADSaiKumar</title>
-	</head>
-	<body>
-		<h1>welcome</h1>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #EFB036;
+            --green: #3B6790;
+            --blue: #23486A;
+            --light-blue: #4C7B8B;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            font-family: 'Helvetica', sans-serif;
+        }
+
+        .profile-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--light-blue);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .profile-header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 5px solid var(--gold);
+        }
+
+        .profile-header h1 {
+            margin: 0;
+        }
+
+        .profile-header p {
+            margin: 0.5rem 0;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border: 2px solid;
+            border-radius: 10px;
+        }
+
+        .section:nth-child(2) {
+            border-color: var(--gold);
+        }
+
+        .section:nth-child(3) {
+            border-color: var(--green);
+        }
+
+        .section:nth-child(4) {
+            border-color: var(--blue);
+        }
+
+        .section:nth-child(5) {
+            border-color: var(--light-blue);
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill {
+            background-color: var(--gold);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        a.button {
+            margin-right: 1rem;
+            background-color: var(--green);
+            color: white;
+        }
+
+        a.button:hover {
+            background-color: var(--blue);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="profile-header">
+            <div>
+                <h1>Avidi Durga Sai Kumar</h1>
+                <p>Full Stack Developer | Problem Solver</p>
+            </div>
+            <img src="profile.jpg" alt="Profile Picture">
+        </header>
+
+        <section class="section">
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <strong>Solution Architect at Alacriti Technology Solutions ltd.</strong><br>
+                    <small>May 2016 - Present</small>
+                    <p>Led a team of developers to build scalable web applications and improve software efficiency.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Skills</h2>
+            <div class="skills">
+                <span class="skill">HTML & CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">SQL</span>
+                <span class="skill">Java</span>
+                <span class="skill">Springboot</span>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>B.Tech. in Computer Science Engineering</strong><br>
+                    <small>Rajiv Gandhi University of Knowledge Technologies, 2010 - 2016</small>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Contact</h2>
+            <p>Email: durgasai218@gmail.com</p>
+        </section>
+    </div>
+</body>
 </html>
